@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #0e7b97;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: clamp(40rem,calc(105vw + 1rem),20rem);
+    height: auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.container .joke {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--green);
+    margin-bottom: 1.5rem;
+}
+
+.container .jokerbtn {
+    padding: 1.5rem 3rem;
+    background-color: var(--green);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 35px;
+}
+
+.container .jokerbtn:hover{
+    opacity: 0.8;
+}
